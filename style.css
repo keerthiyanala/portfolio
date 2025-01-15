@@ -33,9 +33,9 @@ body{
 }
 /* Adjust only the Python Developer text */
 .header-text p {
-    position: relative;
-    top: -480px; /* Move the text upward */
-    font-size: 30px; /* Set a suitable font size */
+    position:absolute;
+    top: -600px; /* Move the text upward */
+    font-size: 18px; /* Set a suitable font size */
     color: #fff; /* Ensure the text color is visible */
     margin: 0;
     padding: 0;
@@ -46,7 +46,7 @@ body{
 .header-text h1 {
     font-size: 100px;
     position: relative;
-    top: -500px;
+    top: -600px;
     white-space: nowrap;
     overflow: hidden; /* Hide the text initially */
     display: inline-block;
@@ -112,7 +112,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 50%;
+    margin-top: 60%;
     font-size: 30px;
 
 }
@@ -405,16 +405,17 @@ nav .fas {
     }
     
     .header-text {
-        position:absolute;
-        top: 130%;
-        left: 30%;
+        position:relative;
+        top: -100px;
+        left:50%;
         transform:translateX(-50%);
         text-align: center;
         font-size: 16px; /* Correct font-size */
     }
     .header-text p{
-        font-size: 16px;
-        margin-bottom: 25px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        top: -100px;
     }
 
     .header-text h1 {
@@ -422,8 +423,10 @@ nav .fas {
         font-family: 'Arial', sans-serif;
         line-height: 1.5;
         margin: 0;
+        left: -20%;
+        top: -70px;
         
-    }
+    }  
 
     #msg {
         color: #61b752;
