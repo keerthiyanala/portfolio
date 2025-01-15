@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
     <title>keerthi portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9a7ef1a4b1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/Rachelle.png" class="logo" alt="keerthi logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Python Developer</p>
-            <h1>Hi, I'm <span>Keerthi</span> Reddy <br>From Dallas</h1>
-        </div>
-    </div>
-</div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Rachelle.png" class="logo" alt="Keerthi Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <!-- Header text section -->
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1 id="typed-text">Hi, I'm Keerthi Reddy From Dallas</h1>
+            </div>
+            
+        </div> <!-- Closing the container div -->
+    </div> <!-- Closing the header div -->
+    
+    <script src="script.js"></script> <!-- Link to your external JavaScript file -->
+    
     <!------------about-------------->
 <div id="about">
     <div class="container">
@@ -74,7 +84,7 @@
 <!----------services---------->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My services</h1>
+        <h1 class="sub-title-service">My services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-brands fa-python"></i>
@@ -157,6 +167,17 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 
 </body>
