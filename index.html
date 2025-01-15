@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keerthi portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a7ef1a4b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Rachelle.png" class="logo" alt="keerthi logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Python Developer</p>
+            <h1>Hi, I'm <span>Keerthi</span> Reddy <br>From Dallas</h1>
+        </div>
+    </div>
+</div>
+    <!------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/shape.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> As a Senior Python Developer with 10 years  of experience, I specialize in  data-driven solutions and leading impactful projects. I've worked with top companies like USAA, Lowe's, Mastercard, and EPAM, building scalable Python applications, cloud-based systems, and optimized data pipelines.
+
+                    My expertise covers data migrations, real-time analytics, and cloud-native solutions, with a focus on high-performance, secure systems that meet business needs.I’m proficient in Python, AWS, Azure, SQL, React, and machine learning, ensuring that my solutions are built for both today and the future.
+                    
+                    I thrive in collaborative settings and enjoy mentoring junior developers. My goal is to create impactful solutions that drive business growth and improve user experiences.
+                    <br> If you're seeking a dedicated, results-driven developer with a passion for technology and innovation,<br> I’d love to connect!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python Development</span><br>Codes/builds software applications</li>
+                        <li><span>Web Development</span><br>Web applications</li>
+                        <li><span>Data Science and Analytics</span><br>Solve complex-problems</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Sr. Python developer at USAA</li>
+                        <li><span>2020 - 2022</span><br>Python developer at Lowe's</li>
+                        <li><span>2017 - 2020</span><br>Python developer at Master Card</li>
+                        <li><span>2014 - 2017</span><br>Software developer at EPAM</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Master's at University Of North Texas</li>
+                        <li><span>2015</span><br>Avinash College Of Commerce</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Application Development</h2>
+                <p>I specialize in developing scalable and efficient Python applications and APIs, leveraging frameworks like Django, Flask, and REST APIs. <br>My expertise includes integrating these solutions with cloud platforms like AWS and Azure, ensuring seamless performance and scalability. By designing robust architectures and deploying cloud-based systems, I help businesses streamline processes and enhance productivity.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Engineering & Machine Learning Solutions</h2>
+                <p>I build and optimize ETL pipelines to ensure efficient data flow and transformation, while applying advanced data analysis to generate actionable insights. My skills extend to deploying machine learning models for predictive analytics and business intelligence.<br> Using tools like Tableau, Power BI, and Python libraries such as Pandas, NumPy, and TensorFlow, I transform complex data into valuable insights.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud Deployment & DevOps Automation</h2>
+                <p>I have extensive experience in automating CI/CD pipelines with Jenkins and Ansible, managing containerized environments with Docker, and deploying scalable cloud-based solutions on AWS and Azure. <br>My focus is always on delivering systems with top-notch performance, scalability, and reliability.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>keerthi.yanala104@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9409772486</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/keerthi-reddy-16637a29a"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/keerthiyanala"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Keerthi-resume python.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> keerthi. All rights reserved <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUFr6_mNPklx18GUplLxLpFSQ_7O3Zc8igFFlK1wt8cxDOLzok0_D2kfcimJ0zmuGm/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
